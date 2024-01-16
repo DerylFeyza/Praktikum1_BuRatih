@@ -1,21 +1,24 @@
 // App.jsx
-import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import BMI from "./components/BMI";
-import CicilanBank from "./components/CicilanBank";
-import Diskon from "./components/Diskon";
-import Conversion from "./components/Conversions/Conversion";
+import Utama from "./components/Utama";
+import { Link } from "react-router-dom";
+import React from "react";
 
-class App extends Component {
-	render() {
-		return (
-			<>
-				<BMI></BMI>
-				<CicilanBank></CicilanBank>;<Diskon></Diskon>
-				<Conversion></Conversion>
-			</>
-		);
-	}
+function App() {
+	return (
+		<div>
+			apacova
+			<hr />
+			<Link to="/bmi">be em i</Link>
+			<Link to="/cicilan">cicil bank</Link>
+			<Link to="/diskon">diskon kalk</Link>
+			<Link to="/conversion">konvers bilang</Link>
+			<hr />
+			<span>
+				<Utama />
+			</span>
+		</div>
+	);
 }
 
 export default App;
